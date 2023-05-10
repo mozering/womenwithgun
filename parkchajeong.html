@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> 박차정 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    .swiper {
+        background-color: black;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+    
+      display: flex;
+      background-color: black;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'sua1rwm',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <button id="topButton"><a href="index.html#list">&#8592;</a></button>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="introduce">
+        <div id="pinpoint">
+          <img src="img/park/detailintro.png" class="width100">
+          <div class="ppsmalltext">
+            <p>박차정</p>
+            <p>조선의 딸, 총을 들고 일어나다</p>
+            <p>1910-1944</p>
+          </div>
+          <div class="ppbigtext">
+              <img src="img/number1.png">
+              <p>근우회 사건 배후 지도, 남경조선부녀회 결성</p> 
+            </div>
+            <div class="ppbigtext">
+              <img src="img/number2.png">
+              <p>의열단 핵심단원, 조선혁명간부학교 교관</p> 
+            </div>              
+            </div>
+          </div>
+
+      <div class="swiper-slide" id="movementpark">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+  </script>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
